@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Ensure Flask can find templates
-COPY templates/ ./templates/
+COPY app/templates/ ./templates/
 
 # Expose the port Gunicorn will run on
 EXPOSE 8000
